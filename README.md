@@ -2,3 +2,4 @@ The contents of this repository have been designed to ease the task of configuri
 
 ./ubuntu-fresh-setup.sh
 
+After running the setup script, launch vim and run :PluginInstall to install the plugins listed in vimrc
