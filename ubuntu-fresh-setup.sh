@@ -60,6 +60,8 @@ mv buddy.vim ~/.vim/colors
 sudo mv ~/.bashrc ~/.bashrc-copy
 sudo mv .bashrc ~
 
+sudo mv .bash_aliases ~
+
 echo "Cleaning Up" &&
     sudo apt-get -f install &&
     sudo apt-get autoremove &&
