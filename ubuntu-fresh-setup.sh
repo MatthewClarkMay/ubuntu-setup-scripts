@@ -50,7 +50,6 @@ fi
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-#git request vimrc
 sudo mv /etc/vim/vimrc /etc/vim/vimrc-backup
 sudo mv vimrc /etc/vim/
 
