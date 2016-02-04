@@ -3,7 +3,7 @@
 sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "------------- Sources have been edited, Next Phase ----------------"
 echo "-------------------------------------------------------------------"
 
 echo "Downloading GetDeb and PlayDeb" &&
@@ -17,7 +17,7 @@ echo "Downloading GetDeb and PlayDeb" &&
     rm -f playdeb_0.3-1~getdeb1_all.deb
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "----------- GetDeb and PlayDeb Installed, Next Phase --------------"
 echo "-------------------------------------------------------------------"
 
 sudo add-apt-repository -y ppa:videolan/stable-daily
@@ -28,7 +28,7 @@ sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "------------------- PPA's added, Next Phase -----------------------"
 echo "-------------------------------------------------------------------"
 
 echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/apt/sources.list.d/libdvdcss.list &&
@@ -36,7 +36,7 @@ echo 'deb http://download.videolan.org/pub/debian/stable/ /' | sudo tee -a /etc/
     wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key add -
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "------------------- VLC PPA Added, Next Phase ---------------------"
 echo "-------------------------------------------------------------------"
 
 sudo apt-get update
@@ -44,13 +44,13 @@ sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "----- update, upgrade, and dist-upgrade complete, Next Phase ------"
 echo "-------------------------------------------------------------------"
 
 sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-wallpapers* htop hexedit exiftool exif nmap vim volatility qbittorrent chromium-browser gufw speedcrunch gparted -y
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "---------- Lots of cool software installed, Next Phase ------------"
 echo "-------------------------------------------------------------------"
 
 sudo apt-get install wireshark
@@ -73,7 +73,7 @@ else
 fi
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "----------------- Chrome Installed, Next Phase --------------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -82,7 +82,7 @@ sudo mv /etc/vim/vimrc /etc/vim/vimrc-backup
 sudo mv vimrc /etc/vim/
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "------------- Vundle and vimrc configured, Next Phase -------------"
 echo "-------------------------------------------------------------------"
 
 mkdir ~/.vim/colors
@@ -90,7 +90,7 @@ wget https://raw.githubusercontent.com/DrSpatula/vim-buddy/master/colors/buddy.v
 mv buddy.vim ~/.vim/colors
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "------------ vim color scheme configured, Next Phase --------------"
 echo "-------------------------------------------------------------------"
 
 sudo mv ~/.bashrc ~/.bashrc-copy
@@ -98,7 +98,7 @@ sudo mv .bashrc ~
 sudo mv .bash_aliases ~
 
 echo "-------------------------------------------------------------------"
-echo "-------------------------- Next Phase -----------------------------"
+echo "------------ .bashrc copied and replaced, Next Phase --------------"
 echo "-------------------------------------------------------------------"
 
 echo "Cleaning Up" &&
@@ -108,7 +108,7 @@ echo "Cleaning Up" &&
     sudo apt-get -y clean
 
 echo "-------------------------------------------------------------------"
-echo "------------------------- Shutting Down ---------------------------"
+echo "-------------------- System Clean, Rebooting ----------------------"
 echo "-------------------------------------------------------------------"
 
 sudo reboot
