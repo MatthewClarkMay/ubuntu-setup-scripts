@@ -40,7 +40,7 @@ echo "------------------- VLC PPA Added, Next Phase ---------------------"
 echo "-------------------------------------------------------------------"
 
 sudo apt-get update
-sudo apt-get install libgdk-pixbuf2.0-dev -y
+sudo apt-get install libgdk-pixbuf2.0 -y
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 
