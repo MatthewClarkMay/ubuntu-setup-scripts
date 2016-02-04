@@ -1,5 +1,15 @@
 #!/bin/bash
 
+echo "Cleaning System" &&
+    sudo apt-get -f install &&
+    sudo apt-get autoremove &&
+    sudo apt-get -y autoclean &&
+    sudo apt-get -y clean
+
+echo "-------------------------------------------------------------------"
+echo "-------------------- System Clean, Next Phase ---------------------"
+echo "-------------------------------------------------------------------"
+
 sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
 
 echo "-------------------------------------------------------------------"
