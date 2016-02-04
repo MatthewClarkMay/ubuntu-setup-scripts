@@ -57,6 +57,9 @@ mkdir ~/.vim/colors
 wget https://raw.githubusercontent.com/DrSpatula/vim-buddy/master/colors/buddy.vim
 mv buddy.vim ~/.vim/colors
 
+sudo mv ~/.bashrc ~/.bashrc-copy
+sudo mv .bashrc ~
+
 echo "Cleaning Up" &&
     sudo apt-get -f install &&
     sudo apt-get autoremove &&
