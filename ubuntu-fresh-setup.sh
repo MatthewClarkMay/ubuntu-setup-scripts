@@ -53,7 +53,7 @@ echo "-------------------------------------------------------------------"
 echo "---------- Lots of cool software installed, Next Phase ------------"
 echo "-------------------------------------------------------------------"
 
-sudo apt-get install wireshark
+sudo apt-get install wireshark -y
 sudo dpkg-reconfigure wireshark-common
 sudo usermod -a -G wireshark $USER
 
