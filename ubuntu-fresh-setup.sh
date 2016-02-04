@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
+sudo sed -i "/^# deb .*partner/ s/^# //" /etc/apt/sources.list
 
 echo "Downloading GetDeb and PlayDeb" &&
     wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
