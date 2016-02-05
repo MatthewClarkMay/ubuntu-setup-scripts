@@ -3,7 +3,9 @@ The contents of this repository are meant to ease the task of configuring a fres
 Command Line Installation
 -------------------------------------------------------------------
 1. **sudo apt-get install git**
-2. **./ubuntu-fresh-setup.sh**
+2. **git clone https://github.com/MatthewClarkMay/ubuntu-setup-scripts.git**
+3. **cd ubuntu-setup-scripts/**
+4. **./ubuntu-fresh-setup.sh**
 
 After running the setup script, launch vim and run **:PluginInstall** to install the plugins listed in vimrc.
 
