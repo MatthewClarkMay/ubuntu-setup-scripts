@@ -8,3 +8,10 @@ Command Line Installation
 After running the setup script, launch vim and run **:PluginInstall** to install the plugins listed in vimrc.
 
 If you need to access proprietary media content (.WMV files for example), you will need to run **sudo apt-get install ubuntu-restricted-extras**
+
+Other Recommendations
+-------------------------------------------------------------------
+1. Enable workspaces: **System Settings --> Appearance --> Behavior --> Enable workspaces**
+2. Change unity launch bar icon size: **System Settings --> Appearance --> Launcher icon size**
+3. Disable online search results when searching in dash: **System Settings --> Security & Privacy --> Search --> OFF**
+4. **Configure Thunderbird email client**

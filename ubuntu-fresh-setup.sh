@@ -48,15 +48,18 @@ echo "-------------------------------------------------------------------"
 echo "----- update, upgrade, and dist-upgrade complete, Next Phase ------"
 echo "-------------------------------------------------------------------"
 
-sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-wallpapers* htop hexedit exiftool exif nmap vim volatility qbittorrent chromium-browser gufw speedcrunch gparted git -y
+sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-wallpapers* htop hexedit exiftool exif nmap vim volatility qbittorrent chromium-browser gufw speedcrunch gparted git wireshark -y
 
 echo "-------------------------------------------------------------------"
 echo "---------- Lots of cool software installed, Next Phase ------------"
 echo "-------------------------------------------------------------------"
 
-sudo apt-get install wireshark -y
 sudo dpkg-reconfigure wireshark-common
 sudo usermod -a -G wireshark $USER
+
+echo "-------------------------------------------------------------------"
+echo "---------------- Wireshark configured, Next Phase -----------------"
+echo "-------------------------------------------------------------------"
 
 if [[ $(getconf LONG_BIT) = "64" ]]
 then
@@ -100,6 +103,12 @@ sudo mv .bash_aliases ~
 
 echo "-------------------------------------------------------------------"
 echo "------------ .bashrc copied and replaced, Next Phase --------------"
+echo "-------------------------------------------------------------------"
+
+sudo dpkg-reconfigure tzdata
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Time Zone reconfigured, Next Phase ----------------"
 echo "-------------------------------------------------------------------"
 
 echo "Cleaning Up" &&
