@@ -16,4 +16,5 @@ Other Recommendations
 1. Enable workspaces: **System Settings --> Appearance --> Behavior --> Enable workspaces**
 2. Change unity launch bar icon size: **System Settings --> Appearance --> Launcher icon size**
 3. Disable online search results when searching in dash: **System Settings --> Security & Privacy --> Search --> OFF**
-4. **Configure Thunderbird email client**
+4. Configure grive: great tutorial **http://dothisbest.com/how-to/install-google-drive-grive2-on-ubuntu/**
+5. **Configure Thunderbird email client**
