@@ -18,3 +18,4 @@ Other Recommendations
 3. Disable online search results when searching in dash: **System Settings --> Security & Privacy --> Search --> OFF**
 4. Configure grive: great tutorial **http://dothisbest.com/how-to/install-google-drive-grive2-on-ubuntu/**
 5. **Configure Thunderbird email client**
+6. Install redis desktop manager: **http://redisdesktop.com/download --> Install package using ubuntu software center**
