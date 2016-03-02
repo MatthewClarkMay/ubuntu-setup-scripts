@@ -26,7 +26,6 @@ sudo add-apt-repository -y ppa:gnome3-team/gnome3
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
-sudo add-apt-repository -y ppa:nillarimogard/webupd8
 
 echo "-------------------------------------------------------------------"
 echo "------------------- PPA's added, Next Phase -----------------------"
@@ -43,13 +42,13 @@ echo "-------------------------------------------------------------------"
 sudo apt-get update
 sudo apt-get install libgdk-pixbuf2.0 -y
 sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
+#sudo apt-get dist-upgrade -y
 
 echo "-------------------------------------------------------------------"
 echo "----- update, upgrade, and dist-upgrade complete, Next Phase ------"
 echo "-------------------------------------------------------------------"
 
-sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-wallpapers* htop hexedit exiftool exif nmap vim volatility qbittorrent chromium-browser gufw speedcrunch gparted git wireshark grive redis-server python-pip python3-pip python-scapy network-manager network-manager-openvpn network-manager-openvpn-gnome openvpn easy-rsa -y
+sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-wallpapers* htop hexedit exiftool exif nmap vim volatility qbittorrent chromium-browser gufw speedcrunch gparted git wireshark redis-server python-pip python3-pip python-scapy network-manager network-manager-openvpn network-manager-openvpn-gnome openvpn easy-rsa -y #grive
 
 echo "-------------------------------------------------------------------"
 echo "---------- Lots of cool software installed, Next Phase ------------"
@@ -81,30 +80,7 @@ echo "-------------------------------------------------------------------"
 echo "----------------- Chrome Installed, Next Phase --------------------"
 echo "-------------------------------------------------------------------"
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-sudo mv /etc/vim/vimrc /etc/vim/vimrc-backup
-sudo cp vimrc /etc/vim/
-
-echo "-------------------------------------------------------------------"
-echo "------------- Vundle and vimrc configured, Next Phase -------------"
-echo "-------------------------------------------------------------------"
-
-mkdir ~/.vim/colors
-wget https://raw.githubusercontent.com/DrSpatula/vim-buddy/master/colors/buddy.vim
-mv buddy.vim ~/.vim/colors
-
-echo "-------------------------------------------------------------------"
-echo "------------ vim color scheme configured, Next Phase --------------"
-echo "-------------------------------------------------------------------"
-
-sudo mv ~/.bashrc ~/.bashrc-copy
-sudo cp .bashrc ~
-sudo cp .bash_aliases ~
-
-echo "-------------------------------------------------------------------"
-echo "------------ .bashrc copied and replaced, Next Phase --------------"
-echo "-------------------------------------------------------------------"
+source bash-vim-setup.sh
 
 sudo dpkg-reconfigure tzdata
 
