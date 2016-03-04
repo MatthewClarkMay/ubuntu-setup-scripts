@@ -39,6 +39,9 @@ echo "-------------------------------------------------------------------"
 echo "------------------- VLC PPA Added, Next Phase ---------------------"
 echo "-------------------------------------------------------------------"
 
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+
 sudo apt-get update
 sudo apt-get install libgdk-pixbuf2.0 -y
 sudo apt-get upgrade -y
@@ -48,7 +51,8 @@ echo "-------------------------------------------------------------------"
 echo "----- update, upgrade, and dist-upgrade complete, Next Phase ------"
 echo "-------------------------------------------------------------------"
 
-sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-wallpapers* htop hexedit exiftool exif nmap vim volatility qbittorrent chromium-browser gufw speedcrunch gparted git wireshark redis-server python-pip python3-pip python-scapy network-manager network-manager-openvpn network-manager-openvpn-gnome openvpn easy-rsa -y #grive
+
+sudo apt-get install synaptic vlc gimp gimp-data gimp-plugin-registry gimp-data-extras y-ppa-manager bleachbit openjdk-7-jre oracle-java8-installer unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller libxine1-ffmpeg mencoder flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 totem-mozilla icedax lame libmad0 libjpeg-progs libdvdcss2 libdvdread4 libdvdnav4 libswscale-extra-2 ubuntu-wallpapers* htop hexedit exiftool exif nmap vim volatility qbittorrent chromium-browser gufw speedcrunch gparted git wireshark redis-server python-pip python3-pip python-scapy network-manager network-manager-openvpn network-manager-openvpn-gnome openvpn easy-rsa google-chrome-stable -y #grive
 
 echo "-------------------------------------------------------------------"
 echo "---------- Lots of cool software installed, Next Phase ------------"
@@ -61,24 +65,6 @@ echo "-------------------------------------------------------------------"
 echo "---------------- Wireshark configured, Next Phase -----------------"
 echo "-------------------------------------------------------------------"
 
-if [[ $(getconf LONG_BIT) = "64" ]]
-then
-    echo "64bit Detected" &&
-    echo "Installing Google Chrome" &&
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
-    sudo dpkg -i google-chrome-stable_current_amd64.deb &&
-    rm -f google-chrome-stable_current_amd64.deb
-else
-    echo "32bit Detected" &&
-    echo "Installing Google Chrome" &&
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb &&
-    sudo dpkg -i google-chrome-stable_current_i386.deb &&
-    rm -f google-chrome-stable_current_i386.deb
-fi
-
-echo "-------------------------------------------------------------------"
-echo "----------------- Chrome Installed, Next Phase --------------------"
-echo "-------------------------------------------------------------------"
 
 source bash-vim-setup.sh
 
