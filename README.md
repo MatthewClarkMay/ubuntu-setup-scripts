@@ -19,3 +19,8 @@ Other Recommendations
 4. Configure grive: great tutorial **http://dothisbest.com/how-to/install-google-drive-grive2-on-ubuntu/**
 5. **Configure Thunderbird email client**
 6. Install redis desktop manager: **http://redisdesktop.com/download --> Install package using ubuntu software center**
+7. Install atom
+8. Install vim plugins for atom
+9. Install mapbox studio
+10. Install PDF-Shuffler
+11. Install gnome-color-chooser
