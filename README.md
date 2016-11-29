@@ -1,3 +1,5 @@
+THIS REPOSITORY IS NO LONGER MAINTAINED ACTIVELY
+
 The contents of this repository are meant to ease the task of configuring a fresh Ubuntu installation.
 
 Command Line Installation
