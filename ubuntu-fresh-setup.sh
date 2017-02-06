@@ -9,7 +9,8 @@ echo "----- update, upgrade, and dist-upgrade complete, Next Phase ------"
 echo "-------------------------------------------------------------------"
 
 
-sudo apt install vlc eopenjdk-8-jdk ubuntu-wallpapers* htop hexedit exiftool exif nmap vim gparted python-pip python3-pip google-chrome-stable
+sudo apt install vlc openjdk-8-jdk ubuntu-wallpapers* htop hexedit exiftool exif nmap vim gparted python-pip python3-pip
+sudo apt install google-chrome-stable
 
 echo "-------------------------------------------------------------------"
 echo "---------- Lots of cool software installed, Next Phase ------------"
