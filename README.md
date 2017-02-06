@@ -7,7 +7,7 @@ Command Line Installation
 3. **cd ubuntu-setup-scripts/**
 4. **sudo ./ubuntu-fresh-setup.sh**
 5. **reboot**
-6. **sudo ./bash-vim-setup.sh
+6. **sudo ./bash-vim-setup.sh**
 
 Other Recommendations
 -------------------------------------------------------------------
