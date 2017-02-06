@@ -1,14 +1,5 @@
 #!/bin/bash
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-sudo mv /etc/vim/vimrc /etc/vim/vimrc-backup
-sudo cp vimrc /etc/vim/
-
-echo "-------------------------------------------------------------------"
-echo "------------- Vundle and vimrc configured, Next Phase -------------"
-echo "-------------------------------------------------------------------"
-
 mkdir ~/.vim/colors
 wget https://raw.githubusercontent.com/DrSpatula/vim-buddy/master/colors/buddy.vim
 mv buddy.vim ~/.vim/colors
