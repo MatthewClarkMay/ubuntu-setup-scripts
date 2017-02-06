@@ -49,7 +49,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 #----------------------------------------------------------
 alias netfresh='while true; do clear && netstat -aunt && sleep 5; done;'
 alias q='exit'
-alias sshstack1='ssh mcmay@l1elasticstack01.scbandt.com'
 
 #-------------------------------------------------------------
 # File & strings related functions:
