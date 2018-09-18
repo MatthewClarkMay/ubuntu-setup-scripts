@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir ~/.vim/colors
+mkdir ~/.vim/colors -p
 wget https://raw.githubusercontent.com/DrSpatula/vim-buddy/master/colors/buddy.vim
 mv buddy.vim ~/.vim/colors
 
