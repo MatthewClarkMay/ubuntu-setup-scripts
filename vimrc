@@ -23,15 +23,15 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'https://github.com/vim-scripts/ScrollColors'
+"Plugin 'https://github.com/vim-scripts/ScrollColors'
 "Plugin 'tpope/vim-fugitive.git'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
+"Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'pangloss/vim-javascript'
 "Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'scrooloose/nerdtree'
-"Plugin 'klen/python-mode'
+"Plugin 'scrooloose/nerdtree'
+Plugin 'klen/python-mode'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'marijnh/tern_for_vim'
 
