@@ -5,9 +5,9 @@ Command Line Installation
 1. **sudo apt install git**
 2. **git clone https://github.com/MatthewClarkMay/ubuntu-setup-scripts.git**
 3. **cd ubuntu-setup-scripts/**
-4. **sudo ./ubuntu-fresh-setup.sh**
-5. **reboot**
-6. **sudo ./bash-vim-setup.sh**
+4. **sudo ./vim-setup.sh**
+5. **vim**
+6. **:PluginInstall**
 
 Other Recommendations
 -------------------------------------------------------------------
