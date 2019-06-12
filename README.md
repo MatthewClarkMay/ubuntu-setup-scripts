@@ -1,6 +1,6 @@
 The contents of this repository are meant to ease the task of configuring a fresh Ubuntu installation.
 
-Command Line Installation
+Vim Setup Setup
 -------------------------------------------------------------------
 1. **sudo apt install git**
 2. **git clone https://github.com/MatthewClarkMay/ubuntu-setup-scripts.git**
